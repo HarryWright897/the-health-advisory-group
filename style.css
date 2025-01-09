@@ -143,7 +143,7 @@ img{
 
 .login-right{
     height: 100vh;
-    background-color: rgb(0, 119, 255);
+    background-color: #4693ff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +178,7 @@ img{
 
 /* risk assesment section */
 .risk-assesment-section{
-    background-image: url("images/Team-members/teambg.svg");
+    background-color: #4693ff;
     background-size: cover;
     background-repeat: none;
     background-position: center;

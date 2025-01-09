@@ -33,8 +33,7 @@
 }
 
 #button-search{
-    background: #0ebbff;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border: none;
     border-radius: 10px;
