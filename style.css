@@ -58,7 +58,6 @@ img{
 }
 
 .hero-weather-data{
-    background: linear-gradient(#bde7ff,#17aaff,#005a9a );
     height:89.5vh;
 }
 
@@ -118,10 +117,42 @@ img{
 }
 
 /* login page */
-
+/* 
 .login-section{
     height: 100%;
-    background: linear-gradient(#bde7ff,#17aaff,#005a9a );
+
+} */
+
+#login-body{
+    overflow-x: hidden;
+}
+
+.login-row{
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+}
+.login-section{
+    max-width: 100%;
+}
+.login-left{
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+.login-right{
+    height: 100vh;
+    background-color: rgb(0, 119, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.login-right img{
+    max-width: 100%;
 }
 
 .login-form {
@@ -135,6 +166,7 @@ img{
 
 .login-text{
     font-size: 4em;
+    align-content: center;
 }
 
 /* weather-data-section */
@@ -145,3 +177,9 @@ img{
 }
 
 /* risk assesment section */
+.risk-assesment-section{
+    background-image: url("images/Team-members/teambg.svg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
