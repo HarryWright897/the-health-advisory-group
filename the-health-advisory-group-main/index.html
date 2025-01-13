@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The health advice group</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Weather app styling -->
+     <link rel="stylesheet" href="weather-style.css">
+    <!-- google font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-shadow navbar-expand-lg sticky-top bg-white"> <!-- This is using bootstrap to create a scalable navbar with a white background-->
+        <div class="container mb-2 mt-2">
+          <a class="navbar-brand" href="index.html"> <!-- This is a section on the left side of the navbar for the navbar brand this also links back to the homepage -->
+            <img src="images\Health_advisory_logo.svg"> <!-- I am using an image which is the company logo for the brand -->
+          </a>
+          <!-- This will appear on smaller screens to allow the user to open and close the hamburger menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- nav links -->
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about.html">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <!-- This creates a drop down menu for the our services pages -->
+                    Our services
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="risk.html">Risk assesment</a></li>
+                    <li><a class="dropdown-item" href="air.html">Air quality</a></li>
+                    <li><a class="dropdown-item" href="weather.html">Weather data</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="account.html">Manage account</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="login.html"><button class="btn btn-outline-secondary">Login</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html"><button class="btn btn-primary">Sign-up</button></a>
+                </li>
+                
+                </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Weather app -->
+      <div id="body" class="hero-weather-data">
+        <div id="weather-container">
+          <h2>Get weather info!</h2>
+          <input type="text" id="city" placeholder="enter city">
+          <button onclick="getWeather()" class="btn btn-light mt-3">Search</button>
+
+          <img id="weather-icon" alt="Weather Icon">
+
+          <div id="temp-div"></div>
+
+          <div id="weather-info"></div>
+
+          <div id="hourly-forecast"></div>
+        </div>
+        <script src="script.js"></script>
+
+       </div>
+    
+     <!-- THIS IS THE OLD HERO SECTION -->
+
+
+    <!-- Hero Section
+<div class="hero-weather-data d-flex">
+  <div class="container">
+      <div class="row position-relative top-25 left-5">
+          <!-- Left Side -->
+          <!-- <div class="col-6"> -->
+              <!-- Location -->
+              <!-- <h3 id="search-location">Location</h3> -->
+              <!-- Weather Info -->
+              <!-- <h2 id="weather-info">...</h2> -->
+              <!-- Search Form -->
+              <!-- <form id="weather-form" class="form-inline mt-3">
+                  <input id="city" type="text" class="form-control mr-sm-2" placeholder="Enter a location" aria-label="Search">
+                  <button onclick="getWeather()" class="btn btn-light mt-3">Search</button>
+              </form>
+          </div> -->
+
+          <!-- Right Side -->
+          <!-- <div class="col-6 text-center d-flex justify-content-end align-items-center flex-column"> -->
+              <!-- Weather Icon -->
+              <!-- <div class="weather-info">
+                  <img id="weather-icon" alt="Weather Icon" style="display: none;">
+                  <p id="temp-div" class="text-light mt-3">--</p>
+              </div> -->
+              <!-- Hourly Forecast -->
+              <!-- <div id="hourly-forecast" class="d-flex mt-4"></div>
+          </div>
+      </div>
+  </div>
+</div> -->
+
+<!-- Link to JavaScript -->
+<script src="script.js"></script>
+
+
+    <!-- advice section -->
+    <div class="advice-section">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 col-12">
+                    <h2>Stay Healthy Rain or Shine</h2>
+
+                    <p class="advice-para text-dark mb-3">The weather affects more than just your wardrobe—it can have a big impact on your health too! Understanding how to adapt to changing conditions can help you stay healthy and comfortable year-round.</p>
+
+                    <button class="btn btn-primary">Seek advice</button>
+                </div>
+                    
+                <div class="col-md-6 col-12">
+                    <img src="images\happy.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- icon-section -->
+    <div class="icon-section grey-bg p-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col text-center">
+                    <img src="images\worlddark.svg" width="90em"alt="world">
+                    <p class="text-dark">Tailored health advise for every season</p>
+                    <div class="col d-inline">
+                      <button class="btn btn-outline-secondary">Learn More</button>
+                    </div>
+                    <div class="col d-inline">
+                      <button class="btn btn-primary">Login/Sign-up</button>
+                    </div>
+                </div>
+
+                <div class="col text-center">
+                    <img src="images/persondark.svg" width="90em" alt="person">
+                    <p class="text-dark">Personalised recommendation just for you</p>
+                </div>
+
+                <div class="col text-center">
+                    <img src="images/handshakedark.svg" width="90em" alt="handshake">
+                    <p class="text-dark">Weather-based health insights you can trust </p>
+                </div>
+            </div>
+
+            <div class="row">
+              
+            </div>
+        </div>
+    </div>
+
+    <!--weather insights section-->
+    <div class="weather-insights p-5">
+        <div class="container mt-5 p-5">
+            <div class="row">
+                <div class="col-md-6 col-12 align-content-center">
+                    <h2>Harness Weather insights<br>for better health</h2>
+                    <p class="text-dark">Utilizing weather-based health advice can significantly enhance your well-being. By aligning your health practices with weather conditions, you can proactively manage your health.</p>
+                </div>
+                <div class="col-md-6 col-12 text-center">
+                    <img src="images\weatherInsights-removebg-preview.png" alt="search glass" width="500em">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- advice-examples-section -->
+     <div class="advice-examples grey-bg p-5">
+        <div class="container mt-3 mb-3">
+            <h2 class="text-center">Our advice articles</h2>
+
+            <div class="row mt-5">
+                <div class="col mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images\sunny-day-article-2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Health advice for sunny days</h5>
+                          <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images\snowy-days-article-2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Health advice for snowy days</h5>
+                          <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images\rainy-days-article.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Health advice for rainy days</h5>
+                          <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images\windy-days-article.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Health advice for windy days</h5>
+                          <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+          <footer class="row row-cols-5 py-5 my-5 border-top">
+            <div class="col">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <img src="images\Health_advisory_logo.svg" alt="Health advice logo">
+              </a>
+              <p class="text-muted">© 2025</p>
+            </div>
+        
+            <div class="col">
+        
+            </div>
+        
+            <div class="col">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+        
+            <div class="col">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+        
+            <div class="col">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+          </footer>
+      </div>
+      </div>
+
+    
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

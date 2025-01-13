@@ -1,0 +1,185 @@
+*{
+    font-family: 'Poppins'
+}
+img{
+    max-width: 100%;
+}
+
+
+/* navbar */
+.navbar-shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-item{
+    margin-left: 8px;
+}
+
+/* Hero Section */
+
+.location {
+    display:inline-block;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.location-icon {
+    top: -5px;
+    position: relative;
+}
+
+.yellow{
+    color: #FFCC00;
+}
+
+/* positioning */
+
+.top-15{
+    top: 15%;
+}
+.top-20{
+    top: 20%;
+}
+
+.top-25{
+    top: 25%;
+}
+
+.left-30{
+    left: 30%;
+}
+
+.top-40{
+    top: 40%;
+}
+
+.left-5{
+    left: 5%;
+}
+
+.hero-weather-data{
+    height:89.5vh;
+}
+
+.weather-conditions-data{
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.weather-info{
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    width: 10em;
+    height: 12em;
+    border-radius: 20px;
+}
+
+.weather-info img{
+    width: 3em;
+    position: relative;
+    z-index: 999;
+}
+
+.weather-info p{
+    font-size: 2em;
+}
+
+/*Advice section*/
+.advice-section{
+    margin-top: 3em;
+    /* min-height: 50vh; */
+
+}
+
+.advice-para{
+    margin-top: 2em;
+}
+
+/*Icon section*/
+.icon-section{
+    margin-top: 2em;
+    background-color: rgb(223, 223, 223)
+}
+
+/* about us*/
+
+.team-members-section {
+     background-image: url("images/Team-members/teambg.svg");
+    /* background: linear-gradient(rgb(255, 228, 121), rgb(255, 255, 161), rgb(87, 179, 255), rgb(73, 73, 255)) */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* weather advice examples */
+.grey-bg{
+    background-color: rgb(244, 244, 244);
+}
+
+/* login page */
+/* 
+.login-section{
+    height: 100%;
+
+} */
+
+#login-body{
+    overflow-x: hidden;
+}
+
+.login-row{
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+}
+.login-section{
+    max-width: 100%;
+}
+.login-left{
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+.login-right{
+    height: 100vh;
+    background-color: #4693ff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.login-right img{
+    max-width: 100%;
+}
+
+.login-form {
+    height: 100vh;
+}
+
+.tree-bg{
+    /* background-image: url(images/cloud-login-image.jpg); */
+    height: 45vh;
+}
+
+.login-text{
+    font-size: 4em;
+    align-content: center;
+}
+
+/* weather-data-section */
+
+.weather-data-section{
+    background: linear-gradient(#bde7ff,#17aaff,#005a9a );
+    height: 89vh;
+}
+
+/* risk assesment section */
+.risk-assesment-section{
+    background-color: #4693ff;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
